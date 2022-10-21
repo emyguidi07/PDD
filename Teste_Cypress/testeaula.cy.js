@@ -8,7 +8,7 @@ describe('Sistema de busca do Google', () => {
   it('E realiza a busca', () =>{
     cy.get('form').submit({})
   }) 
-  it('E Clica na primeira opcao', () =>{
+  it('Então verifica a opção da busca', () =>{
     cy.get('h3').should('include.text', 'Camargo Aranha')
   }) 
 })
